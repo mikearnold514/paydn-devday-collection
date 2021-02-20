@@ -1,0 +1,1098 @@
+{
+	"info": {
+		"_postman_id": "e55dea3b-f8ec-45d6-b621-708a31656b34",
+		"name": "PayDN Developer Day",
+		"description": "This collection contains the major APIs for the PayDN Payment Data Network prototype application.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "GetAuthByCorrelationID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/auths/correlation?id=40016&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"correlation"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "40016"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAuthDTOByCorrelationId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/auths/authListDTO?id=40016&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"authListDTO"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "40016"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getToken",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/auths/getToken?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"getToken"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAuthByMerchant",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/auths/merchant?id=1000&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"merchant"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1000"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAuthByConsumer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/auths/consumer?id=1000&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"consumer"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1000"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAuthByMerchantByDate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/auths/merchant/date?id=1000&fromDate=2020-11-01&toDate=2020-11-30&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"merchant",
+								"date"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1000"
+								},
+								{
+									"key": "fromDate",
+									"value": "2020-11-01"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-11-30"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAuthByConsumerByDate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/auths/consumer/date?id=1000&fromDate=2020-11-01&toDate=2020-11-30&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"consumer",
+								"date"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1000"
+								},
+								{
+									"key": "fromDate",
+									"value": "2020-11-01"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-11-30"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsumerAuthRequest",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"authAmount\": 555.0,\r\n    \"correlationId\": \"40020\",\r\n    \"currencyCode\": \"USD\",\r\n    \"consumer\": {\r\n    \t\"consumerToken\": \"XA#&%2345\",\r\n    \t\"consumerApp\": \"Venmo\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auths/consumer?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"consumer"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MerchantAuthRequest",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"authAmount\": 555.0,\r\n    \"correlationId\": \"40020\",\r\n    \"currencyCode\": \"USD\",\r\n    \"merchant\": {\r\n    \t\"merchantId\": 1,\r\n    \t\"terminalId\": 99,\r\n    \t\"merchantOrder\": \"00001\",\r\n    \t\"merchantServer\": \"Dave\",\r\n    \t\"merchantToken\": \"MTOKEN@#$%!11\"\r\n    },\r\n    \"consumer\": {},\r\n    \"items\": [\r\n    \t{\r\n    \t\t\"sku\": 987654321,\r\n    \t\t\"description\": \"Beer\",\r\n    \t\t\"price\": 11.99,\r\n    \t\t\"quantity\": 1,\r\n    \t\t\"cost\": 11.99\r\n    \t}\r\n    ],\r\n    \"taxes\": [\r\n    \t{\r\n    \t\t\"description\": \"Applicable Tax\",\r\n    \t\t\"taxRate\": 0.0,\r\n    \t\t\"taxAmount\": 0.0\r\n    \t}\r\n    ],\r\n    \"programs\": [\r\n    \t{\r\n    \t\t\"description\": \"Rebate Program 1\",\r\n    \t\t\"provider\": \"Rakuten\",\r\n    \t\t\"type\": \"Coupon\",\r\n    \t\t\"value\": 0.0\r\n    \t}\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auths/merchant?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"merchant"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MerchantRefundRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"authAmount\": 16.00,\n\t\"correlationId\": \"23004\",\n\t\"authRefId\": 3652,\n\t\"currencyCode\": \"USD\",\n\t\"merchant\": {\n\t\t\"terminalId\": \"001\",\n\t\t\"correlationId\": \"23004\",\n\t\t\"merchantOrder\": \"ABC123\",\n\t\t\"merchantServer\": \"Nicole Kidman\",\n\t\t\"merchantToken\": \"MTOKEN@#$%!11\"\n\t},\n\t\"items\": [\n\t\t{\n\t\t\t\"correlationId\": \"23004\",\n\t\t\t\"sku\": 987654321,\n\t\t\t\"description\": \"Soda\",\n\t\t\t\"price\": 8.00,\n\t\t\t\"quantity\": 2,\n\t\t\t\"cost\": 16.00\n\t\t}\n\t]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auths/refund?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auths",
+								"refund"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Basket",
+			"item": [
+				{
+					"name": "GetAllBaskets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/baskets?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"baskets"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveBaskets",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"basketId\": 0,\r\n    \"description\": \"Demo Basket 12\",\r\n    \"basketItems\": [\r\n        {\r\n    \t\"quantity\": 3,\r\n    \t\"cost\": \"3.00\",\r\n        \"productId\": 1151\r\n        },\r\n        {\r\n    \t\"quantity\": 4,\r\n    \t\"cost\": \"4.00\",\r\n        \"productId\": 1201\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/baskets/save?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"baskets",
+								"save"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBasketByID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/baskets/find?id=1651&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"baskets",
+								"find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1651"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consumer",
+			"item": [
+				{
+					"name": "GetAllConsumers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/consumers?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"consumers"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveConsumer",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"consumerName\": \"Harry Potter\",\r\n    \"consumerToken\": \"0001\",\r\n    \"consumerApp\": \"PayPal\",\r\n    \"consumerCurrency\": \"USD\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/consumers/save?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"consumers",
+								"save"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetConsumerByID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/consumers/find?id=1051&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"consumers",
+								"find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1051"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Merchant",
+			"item": [
+				{
+					"name": "GetAllMerchants",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/merchants?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"merchants"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveMerchant",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"merchId\": \"212000111889\",\r\n    \"termId\": \"0001\",\r\n    \"merchName\": \"AutoZone\",\r\n    \"merchAddr1\": \"20 Main St\",\r\n    \"merchAddr2\": \"\",\r\n    \"merchCity\": \"New York\",\r\n    \"merchState\": \"NY\",\r\n    \"merchZip\": 11764,\r\n    \"merchPhone\": \"(212) 555-1212\",\r\n    \"merchCurrency\": \"USD\",\r\n    \"stateTax\": \"0.020000\",\r\n    \"stateDescription\": \"NY\",\r\n    \"localTax\": \"0.010000\",\r\n    \"localDescription\": \"Queens\",\r\n    \"merchantToken\": \"MTOKEN000002\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/merchants/save?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"merchants",
+								"save"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetMerchantByID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/merchants/find?id=1101&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"merchants",
+								"find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1101"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetMerchantDetailsByAcquirerID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/merchants/details?id=123456789&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"merchants",
+								"details"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "123456789"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Program",
+			"item": [
+				{
+					"name": "GetProgramById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/programs/find?id=1000&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"programs",
+								"find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1000"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveProgram",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"programId\": 1101,\r\n    \"description\": \"Demo Program 5\",\r\n    \"provider\": \"Chase Rewards\",\r\n    \"programDetails\": [\r\n        {\r\n    \t\"programType\": \"Coupon\",\r\n    \t\"programPercent\": 0.1,\r\n        \"programAmount\": 10.00,\r\n        \"programPoints\": 500\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/programs/save?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"programs",
+								"save"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllPrograms",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/programs?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"programs"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "GetProductByID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/products/find?id=1151&key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1151"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllProducts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/products?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": 900000002,\r\n    \"description\": \"Drill Bit\",\r\n    \"price\": 15.00\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{url}}/products/save?key=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"save"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
